@@ -1,468 +1,481 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>AVE - Look Book</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <link rel="stylesheet" href="lookbook.css"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:Regular">
-    </head>
-    <body>
-        <div class="header">
-            <div class="top-bar">
-                <div class="currency">
-                    <a href="#cur">Currency: GBP</a>
-                </div>
-                <div class="top-bar-menu">
-                    <ul>
-                        <li>
-                            <a href="signin.html">Register</a>
-                        </li>
-                        <li>
-                            <a href="signin.html">Sign In</a>
-                        </li>
-                        <li>
-                            <a href="#box" id="cart">empty</a>
-                        </li>
-                    </ul>
-                </div>
+<head>
+    <title>AVE - Look Book</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="top-bar">
+            <div class="currency">
+                <a href="#">Currency: GBP</a>
             </div>
-        </div>
-
-        <div class="nav row">
-            <div class="col-12">
-                <div class="logo">
-                    <a href="index.html"><span>AVENUE</span> FASHION</a>
-                </div>
-                <div class="nav-menu">
-                    <ul>
-                        <li class="dropdown">
-                            <a href="#" class="dropbtn">MENS <br/><img src="images/main/rectangle.png"></a>
-                            <div class="dropdown-content">
-                                <div class="dropdown-col">
-                                    <p>CASUALS</p>
-                                    <a href="#">Jackets</a>
-                                    <a href="#">Hoodies & Sweatshirts</a>
-                                    <a href="#">Polo Shirts</a>
-                                    <a href="#">Sportswear</a>
-                                    <a href="#">Trousers & Chinos</a>
-                                    <a href="#">T-Shirts</a>
-                                </div>
-                                <div class="dropdown-col">
-                                    <p>FORMAL</p>
-                                    <a href="#">Jackets</a>
-                                    <a href="#">Shirts</a>
-                                    <a href="#">Suits</a>
-                                    <a href="#">Trousers</a>
-                                </div>
-                                <div class="dropdown-banner">
-                                    <p><b>AUTUMN SALE!</b><br />UP TO 50% OFF</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropbtn">WOMENS <br /><img src="images/main/rectangle.png"></a>
-                            <div class="dropdown-content">
-                                <div class="dropdown-col">
-                                    <p>CASUALS</p>
-                                    <a href="#">Jackets</a>
-                                    <a href="#">Shirts & Blouses</a>
-                                    <a href="#">Sportswear</a>
-                                    <a href="#">Chinos</a>
-                                    <a href="#">Sweaters & Cardigans</a>
-                                </div>
-                                <div class="dropdown-col">
-                                    <p>FORMAL</p>
-                                    <a href="#">Jackets</a>
-                                    <a href="#">Shirts</a>
-                                    <a href="#">Suits</a>
-                                    <a href="#">Trousers</a>
-                                </div>
-                                <div class="dropdown-banner">
-                                    <p><b>AUTUMN SALE!</b><br />UP TO 50% OFF</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <a href="brand.html" class="dropbtn">THE BRAND</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="stores.html" class="dropbtn">LOCAL STORES <br /><img src="images/main/rectangle.png"></a>
-                            <div class="dropdown-content dropdown-content-2">
-                                <div class="dropdown-col">
-                                    <a href="#">Fashion Valley Mall</a>
-                                    <a href="#">Outlets at San Clemente</a>
-                                    <a href="#">Westfield Topanga</a>
-                                    <a href="#">South Bay Galleria</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <a href="lookbook.html" class="dropbtn">LOOK BOOK <br /><img src="images/main/rectangle.png"></a>
-                            <div class="dropdown-content dropdown-content-rigth">
-                                <div class="dropdown-col">
-                                    <p>OUR LOOKBOOKS</p>
-                                    <a href="#">Latest Posts (mixed)</a>
-                                    <a href="#">Men's Lookbook</a>
-                                    <a href="#">Women's Lookbook</a>
-                                </div>
-                                <div class="dropdown-col">
-                                    <p>YOUR LOOKBOOK</p>
-                                    <a href="#">View and Edit</a>
-                                    <a href="#">Share</a>
-                                    <a href="#">Delete</a>
-                                </div>
-                                <div class="dropdown-banner">
-                                    <p><b>AUTUMN SALE!</b><br />UP TO 50% OFF</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <form class="form">
-                                <input type="search" class="form-search" name="" placeholder="Search.." />
-                            </form>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="row intro">
-            <div class="col-12">
-                <div class="slogan">
-                    <h1><span>OUR</span> LOOKBOOK</h1>
-                    <p>LATEST POSTS - MENS & WOMENS</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <ul class="items-menu">
+            <div class="top-bar-menu">
+                <ul>
                     <li>
-                        <a href="#Register">LATEST</a>
+                        <a href="signin.html">Register</a>
                     </li>
                     <li>
-                        <a href="#SignIn">MOST LIKED</a>
+                        <a href="signin.html">Sign In</a>
                     </li>
                     <li>
-                        <a href="#box">BEST SELLERS</a>
-                    </li>
-                    <li>
-                        <a href="#box">PRICE LOW TO HIGH</a>
-                    </li>
-                    <li>
-                        <a href="#box">PRICE HIGH TO LOW</a>
+                        <a href="#" class="shop-cart">empty</a>
                     </li>
                 </ul>
             </div>
         </div>
+    </div>
 
-        <div class="row">
-            <div class="col-3">
-                <div class="items-photo">
-                    <p class="ref"><sup>REF</sup>M1</p>
-                    <a href="product.html"><img src="images/index/item1.jpg" class="photo" /></a>
-                    <div class="items-photo-details">
-                        <p class="items-photo-info-title">WOMENS BURNT ORANGE CASUAL TEE <sup>£</sup>29.95</p>
-                        <p>
-                            Classic casual t-shirt for women on the move.<br />
-                            100% cotton.
-                        </p>
-                        <ul class="items-photo-details-menu">
-                            <li><a href=""><img src="images/main/cart.png" /></a></li>
-                            <li><a href=""><img src="images/index/wishlist.png" /></a></li>
-                            <li><a href=""><img src="images/index/compare.png" /></a></li>
-                        </ul>
-                    </div>
-                </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="logo">
+                <h1><a href="index.html" class="logo-link"><span>Avenue</span> fashion</a></h1>
             </div>
-            <div class="col-3">
-                <div class="items-photo">
-                    <p class="ref"><sup>REF</sup>W1</p>
-                    <a href="product.html"><img src="images/index/item2.jpg" class="photo" /></a>
-                    <div class="items-photo-details">
-                        <p class="items-photo-info-title">WOMENS BURNT ORANGE CASUAL TEE <sup>£</sup>29.95</p>
-                        <p>
-                            Classic casual t-shirt for women on the move.<br />
-                            100% cotton.
-                        </p>
-                        <ul class="items-photo-details-menu">
-                            <li><a href=""><img src="images/main/cart.png" /></a></li>
-                            <li><a href=""><img src="images/index/wishlist.png" /></a></li>
-                            <li><a href=""><img src="images/index/compare.png" /></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="items-photo">
-                    <img src="images/lookbook/item7.jpg" class="photo" />
-                    <div class="photo-wrapper">
-                        <p class="photo-title"><b>JANE'S</b> LOOKBOOK</p>
-                        <p class="photo-subtitle">GET THE LOOK FOR UNDER £200!</p>
-                        <p class="photo-text">
-                            We invited actress Jane Marshall to join us
-                            for the day and choose her perfect outfit from
-                            our vast range of womens fashion.<br /><br />
-                            This is of course not true as this is just a design
-                            for a website and this is simply filler text.
-                        </p>
-                        <a href="product.html">VIEW NOW</a>
-                    </div>
-                </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn arrow-down">Mens</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-col">
+                                <p>Casuals</p>
+                                <a href="#">Jackets</a>
+                                <a href="#">Hoodies & Sweatshirts</a>
+                                <a href="#">Polo Shirts</a>
+                                <a href="#">Sportswear</a>
+                                <a href="#">Trousers & Chinos</a>
+                                <a href="#">T-Shirts</a>
+                            </div>
+                            <div class="dropdown-col">
+                                <p>Formal</p>
+                                <a href="#">Jackets</a>
+                                <a href="#">Shirts</a>
+                                <a href="#">Suits</a>
+                                <a href="#">Trousers</a>
+                            </div>
+                            <div class="dropdown-banner">
+                                <p><b>AUTUMN SALE!</b><br />UP TO 50% OFF</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn arrow-down">Womens</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-col">
+                                <p>Casuals</p>
+                                <a href="#">Jackets</a>
+                                <a href="#">Shirts & Blouses</a>
+                                <a href="#">Sportswear</a>
+                                <a href="#">Chinos</a>
+                                <a href="#">Sweaters & Cardigans</a>
+                            </div>
+                            <div class="dropdown-col">
+                                <p>Formal</p>
+                                <a href="#">Jackets</a>
+                                <a href="#">Shirts</a>
+                                <a href="#">Suits</a>
+                                <a href="#">Trousers</a>
+                            </div>
+                            <div class="dropdown-banner">
+                                <p><b>AUTUMN SALE!</b><br />UP TO 50% OFF</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="brand.html" class="dropbtn">The brand</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="stores.html" class="dropbtn arrow-down">Local stores</a>
+                        <div class="dropdown-content dropdown-content-2">
+                            <div class="dropdown-col">
+                                <a href="#">Fashion Valley Mall</a>
+                                <a href="#">Outlets at San Clemente</a>
+                                <a href="#">Westfield Topanga</a>
+                                <a href="#">South Bay Galleria</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="lookbook.html" class="dropbtn arrow-down">Look book</a>
+                        <div class="dropdown-content dropdown-content-rigth">
+                            <div class="dropdown-col">
+                                <p>Our Lookbooks</p>
+                                <a href="#">Latest Posts (mixed)</a>
+                                <a href="#">Men's Lookbook</a>
+                                <a href="#">Women's Lookbook</a>
+                            </div>
+                            <div class="dropdown-col">
+                                <p>Your lookbooks</p>
+                                <a href="#">View and Edit</a>
+                                <a href="#">Share</a>
+                                <a href="#">Delete</a>
+                            </div>
+                            <div class="dropdown-banner">
+                                <p><b>AUTUMN SALE!</b><br />UP TO 50% OFF</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <form class="nav-form">
+                            <label for="search">Search</label>
+                            <input type="search" id="search" class="website-search" placeholder="Search.." />
+                        </form>
+                    </li>
+                </ul>
             </div>
         </div>
+    </div>
 
-        <div class="row">
-            <div class="col-3">
-                <div class="items-photo">
-                    <p class="ref"><sup>REF</sup>MJ1</p>
-                    <a href="product.html"><img src="images/index/item4.jpg" class="photo" /></a>
-                    <div class="items-photo-details">
-                        <p class="items-photo-info-title">WOMENS BURNT ORANGE CASUAL TEE <sup>£</sup>29.95</p>
-                        <p>
-                            Classic casual t-shirt for women on the move.<br />
-                            100% cotton.
-                        </p>
-                        <ul class="items-photo-details-menu">
-                            <li><a href=""><img src="images/main/cart.png" /></a></li>
-                            <li><a href=""><img src="images/index/wishlist.png" /></a></li>
-                            <li><a href=""><img src="images/index/compare.png" /></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="items-photo">
-                    <p class="ref"><sup>REF</sup>M2</p>
-                    <a href="product.html"><img src="images/index/item3.jpg" class="photo" /></a>
-                    <div class="items-photo-details">
-                        <p class="items-photo-info-title">WOMENS BURNT ORANGE CASUAL TEE <sup>£</sup>29.95</p>
-                        <p>
-                            Classic casual t-shirt for women on the move.<br />
-                            100% cotton.
-                        </p>
-                        <ul class="items-photo-details-menu">
-                            <li><a href=""><img src="images/main/cart.png" /></a></li>
-                            <li><a href=""><img src="images/index/wishlist.png" /></a></li>
-                            <li><a href=""><img src="images/index/compare.png" /></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="items-photo">
-                    <p class="ref"><sup>REF</sup>W2</p>
-                    <img src="images/index/thumb-front.png" class="thumb-front" />
-                    <img src="images/index/thumb-back.png" class="thumb-back" />
-                    <a href="product.html"><img src="images/index/item5.jpg" class="photo" /></a>
-                    <div class="items-photo-details">
-                        <p class="items-photo-info-title">WOMENS BURNT ORANGE CASUAL TEE <sup>£</sup>29.95</p>
-                        <p>
-                            Classic casual t-shirt for women on the move.<br />
-                            100% cotton.
-                        </p>
-                        <ul class="items-photo-details-menu">
-                            <li><a href=""><img src="images/main/cart.png" /></a></li>
-                            <li><a href=""><img src="images/index/wishlist.png" /></a></li>
-                            <li><a href=""><img src="images/index/compare.png" /></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="items-photo">
-                    <p class="ref"><sup>REF</sup>W3</p>
-                    <a href="product.html"><img src="images/index/item6.jpg" class="photo" /></a>
-                    <div class="items-photo-details">
-                        <p class="items-photo-info-title">WOMENS BURNT ORANGE CASUAL TEE <sup>£</sup>29.95</p>
-                        <p>
-                            Classic casual t-shirt for women on the move.<br />
-                            100% cotton.
-                        </p>
-                        <ul class="items-photo-details-menu">
-                            <li><a href=""><img src="images/main/cart.png" /></a></li>
-                            <li><a href=""><img src="images/index/wishlist.png" /></a></li>
-                            <li><a href=""><img src="images/index/compare.png" /></a></li>
-                        </ul>
-                    </div>
-                </div>
+    <div class="row intro">
+        <div class="col-12">
+            <div class="page-title-box">
+                <h2 class="page-title"><span>Our</span> lookbook</h2>
+                <h3 class="slogan">Latest posts - mens & womens</h3>
             </div>
         </div>
+    </div>
 
-        <div class="row">
-            <div class="col-9">
-                <div class="items-photo">
-                    <img src="images/lookbook/item8.jpg" class="photo" />
-                    <div class="photo-wrapper">
-                        <p class="photo-title"><b>WIN</b> A NEW LOOK!</p>
-                        <p class="photo-subtitle">ADD LOOKS OR ITEMS TO YOUR LOOKBOOK FOR A CHANCE OF WINNING</p>
-                        <p class="photo-text">
-                            See an item or a complete look you like, click the &#9825; button to add it to your
-                            lookbook and you’ll be automatically entered to our monthly draw where
-                            one winner gets a £300 gift voucher to spend on our website!
-                        </p>
-                        <a href="product.html">SHOP NOW</a>
-                    </div>
-                    <div class="win">
-                        <p>WIN</p>
-                        <p>A NEW LOOK</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="items-photo">
-                    <p class="ref"><sup>REF</sup>W4</p>
-                    <a href="product.html"><img src="images/lookbook/item9.jpg" class="photo" /></a>
-                    <div class="items-photo-details">
-                        <p class="items-photo-info-title">WOMENS BURNT ORANGE CASUAL TEE <sup>£</sup>29.95</p>
-                        <p>
-                            Classic casual t-shirt for women on the move.<br />
-                            100% cotton.
-                        </p>
-                        <ul class="items-photo-details-menu">
-                            <li><a href=""><img src="images/main/cart.png" /></a></li>
-                            <li><a href=""><img src="images/index/wishlist.png" /></a></li>
-                            <li><a href=""><img src="images/index/compare.png" /></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <div class="row">
+        <div class="col-12">
+            <ul class="products-menu">
+                <li>
+                    <a href="#">Latest</a>
+                </li>
+                <li>
+                    <a href="#">Most liked</a>
+                </li>
+                <li>
+                    <a href="#">Best sellers</a>
+                </li>
+                <li>
+                    <a href="#">Price low to high</a>
+                </li>
+                <li>
+                    <a href="#">Price high to low</a>
+                </li>
+            </ul>
         </div>
+    </div>
 
-        <div class="line"></div>
-        
-        <div class="row lookbook">
-            <div class="col-4">
-                <div class="lookbook-2 men-lookbook">
-                    <p class="lookbook-text-1"><b>MEN'S</b> <br />LOOKBOOK</p>
-                    <p class="lookbook-text-2">
-                        Lorem ipsum dolor sit amet eras facilisis
-                        consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
-                        Elementum metus facilisis ut phasellu.
+    <div class="row products">
+        <div class="col-3">
+            <div class="products-box">
+                <p class="products-price"><sup>REF</sup>M1</p>
+                <a href="product.html">
+                    <img src="images/index/item1.jpg" class="products-img" alt="Womens burnt orange casual tee" />
+                </a>
+                <div class="products-details-box">
+                    <p class="products-img-info-title">Womens burnt orange casual tee <sup>£</sup>29.95</p>
+                    <p>
+                        Classic casual t-shirt for women on the move. 100% cotton.
                     </p>
-                    <a href="#">VIEW NOW</a>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="lookbook-2 women-lookbook">
-                    <p class="lookbook-text-1"><b>WOMEN'S</b> <br />LOOKBOOK</p>
-                    <p class="lookbook-text-2">
-                        Lorem ipsum dolor sit amet eras facilisis
-                        consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
-                        Elementum metus facilisis ut phasellu.
-                    </p>
-                    <a href="#">VIEW NOW</a>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="lookbook-2 your-lookbook">
-                    <p class="lookbook-text-1"><b>YOUR</b> <br />LOOKBOOK</p>
-                    <p class="lookbook-text-2">
-                        Lorem ipsum dolor sit amet eras facilisis
-                        consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
-                        Elementum metus facilisis ut phasellu.
-                    </p>
-                    <a href="#">VIEW NOW</a>
+                    <ul class="products-img-menu">
+                        <li><a href="#" class="add-to-cart"><span class="text-hide">Add to cart</span></a></li>
+                        <li><a href="#" class="add-to-wishlist"><span class="text-hide">Wishlist</span></a></li>
+                        <li><a href="#" class="compare"><span class="text-hide">Compare</span></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-
-        <div class="row footer">
-            <div class="col-12">
-                <div class="footer-wrap">
-                    <div class="footer-list">
-                        <p>INFORMATION</p>
-                        <ul>
-                            <li><a href="brand.html">The brand</a></li>
-                            <li><a href="stores.html">Local stores</a></li>
-                            <li><a href="#">Customer service</a></li>
-                            <li><a href="#">Privacy & cookies</a></li>
-                            <li><a href="#">Site map</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-list">
-                        <p>WHY BUY FROM US</p>
-                        <ul>
-                            <li><a href="#">Shipping & return</a></li>
-                            <li><a href="#">Secure shopping</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                            <li><a href="#">Award winning</a></li>
-                            <li><a href="#">Ethnical trading</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-list">
-                        <p>YOUR ACCOUNT</p>
-                        <ul>
-                            <li><a href="signin.html">Sing in</a></li>
-                            <li><a href="signin.html">Register</a></li>
-                            <li><a href="#">View cart</a></li>
-                            <li><a href="#">View your lookbook</a></li>
-                            <li><a href="#">Track an order</a></li>
-                            <li><a href="#">Update information</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-list">
-                        <p>LOOKBOOK</p>
-                        <ul>
-                            <li><a href="#">Latest posts</a></li>
-                            <li><a href="#">Men's lookbook</a></li>
-                            <li><a href="#">Women's lookbook</a></li>
-                            <li><a href="#">Lookbooks RSS feed</a></li>
-                            <li><a href="#">View your lookbook</a></li>
-                            <li><a href="#">Delete your lookbook</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-list">
-                        <p>CONTACT DETAILS</p>
-                        <ul>
-                            <li>Head Office: Avenue Fashion, <br /> 180-182 Regent Street, London</li>
-                            <li><a href="tel:0123-456-789">Telephone: 0123-456-789</a></li>
-                            <li><a href="mailto:support@yourwebsite.com">Email: support@yourwebsite.com</a></li>
-                        </ul>
-                    </div>
+        <div class="col-3">
+            <div class="products-box">
+                <p class="products-price"><sup>REF</sup>W1</p>
+                <a href="product.html">
+                    <img src="images/index/item2.jpg" class="products-img" alt="Womens burnt orange casual tee" />
+                </a>
+                <div class="products-details-box">
+                    <p class="products-img-info-title">Womens burnt orange casual tee <sup>£</sup>29.95</p>
+                    <p>
+                        Classic casual t-shirt for women on the move. 100% cotton.
+                    </p>
+                    <ul class="products-img-menu">
+                        <li><a href="#" class="add-to-cart"><span class="text-hide">Add to cart</span></a></li>
+                        <li><a href="#" class="add-to-wishlist"><span class="text-hide">Wishlist</span></a></li>
+                        <li><a href="#" class="compare"><span class="text-hide">Compare</span></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
+        <div class="col-6">
+            <div class="products-box">
+                <img src="images/lookbook/item7.jpg" class="products-img" alt="Womens burnt orange casual tee" />
+                <div class="products-new-box">
+                    <h3 class="products-new-title"><span>Jane's</span> lookbook</h3>
+                    <p class="products-new-subtitle">Get the look for under £200!</p>
+                    <p class="products-new-text">
+                        We invited actress Jane Marshall to join us
+                        for the day and choose her perfect outfit from
+                        our vast range of womens fashion.<br /><br />
+                        This is of course not true as this is just a design
+                        for a website and this is simply filler text.
+                    </p>
+                    <a href="product.html" class="btn lookbook-view-more">View now</a>
+                </div>
 
-        <div class="row banners">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-3">
+            <div class="products-box">
+                <p class="products-price"><sup>REF</sup>MJ1</p>
+                <a href="product.html">
+                    <img src="images/index/item4.jpg" class="products-img" alt="Womens burnt orange casual tee" />
+                </a>
+                <div class="products-details-box">
+                    <p class="products-img-info-title">Womens burnt orange casual tee <sup>£</sup>29.95</p>
+                    <p>
+                        Classic casual t-shirt for women on the move. 100% cotton.
+                    </p>
+                    <ul class="products-img-menu">
+                        <li><a href="#" class="add-to-cart"><span class="text-hide">Add to cart</span></a></li>
+                        <li><a href="#" class="add-to-wishlist"><span class="text-hide">Wishlist</span></a></li>
+                        <li><a href="#" class="compare"><span class="text-hide">Compare</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="products-box">
+                <p class="products-price"><sup>REF</sup>M2</p>
+                <a href="product.html">
+                    <img src="images/index/item3.jpg" class="products-img" alt="Womens burnt orange casual tee" />
+                </a>
+                <div class="products-details-box">
+                    <p class="products-img-info-title">Womens burnt orange casual tee <sup>£</sup>29.95</p>
+                    <p>
+                        Classic casual t-shirt for women on the move. 100% cotton.
+                    </p>
+                    <ul class="products-img-menu">
+                        <li><a href="#" class="add-to-cart"><span class="text-hide">Add to cart</span></a></li>
+                        <li><a href="#" class="add-to-wishlist"><span class="text-hide">Wishlist</span></a></li>
+                        <li><a href="#" class="compare"><span class="text-hide">Compare</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="products-box">
+                <p class="products-price"><sup>REF</sup>W2</p>
+                <img src="images/index/thumb-front.png" class="thumb-front" alt="front view" />
+                <img src="images/index/thumb-back.png" class="thumb-back" alt="back view" />
+                <a href="product.html">
+                    <img src="images/index/item5.jpg" class="products-img" alt="Womens burnt orange casual tee" />
+                </a>
+                <div class="products-details-box">
+                    <p class="products-img-info-title">Womens burnt orange casual tee <sup>£</sup>29.95</p>
+                    <p>
+                        Classic casual t-shirt for women on the move. 100% cotton.
+                    </p>
+                    <ul class="products-img-menu">
+                        <li><a href="#" class="add-to-cart"><span class="text-hide">Add to cart</span></a></li>
+                        <li><a href="#" class="add-to-wishlist"><span class="text-hide">Wishlist</span></a></li>
+                        <li><a href="#" class="compare"><span class="text-hide">Compare</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="products-box">
+                <p class="products-price"><sup>REF</sup>W3</p>
+                <a href="product.html">
+                    <img src="images/index/item6.jpg" class="products-img" alt="Womens burnt orange casual tee" />
+                </a>
+                <div class="products-details-box">
+                    <p class="products-img-info-title">Womens burnt orange casual tee <sup>£</sup>29.95</p>
+                    <p>
+                        Classic casual t-shirt for women on the move. 100% cotton.
+                    </p>
+                    <ul class="products-img-menu">
+                        <li><a href="#" class="add-to-cart"><span class="text-hide">Add to cart</span></a></li>
+                        <li><a href="#" class="add-to-wishlist"><span class="text-hide">Wishlist</span></a></li>
+                        <li><a href="#" class="compare"><span class="text-hide">Compare</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-9">
+            <div class="products-box">
+                <img src="images/lookbook/item8.jpg" class="products-img" alt="Womens burnt orange casual tee" />
+                <div class="products-new-box">
+                    <p class="products-new-title"><span>Win</span> a new look!</p>
+                    <p class="products-new-subtitle">Add looks or items to your lookbook for a chance of winning</p>
+                    <p class="products-new-text">
+                        See an item or a complete look you like, click the &#9825; button to add it to your
+                        lookbook and you’ll be automatically entered to our monthly draw where
+                        one winner gets a <b>£300</b> gift voucher to spend on our website!
+                    </p>
+                    <a href="product.html" class="btn lookbook-view-more">Shop now</a>
+                </div>
+                <div class="products-new-slogan-box">
+                    <p class="products-new-slogan color-aqua">Win <span>a new look</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="products-box">
+                <p class="products-price"><sup>REF</sup>W4</p>
+                <a href="product.html">
+                    <img src="images/lookbook/item9.jpg" class="products-img" alt="Womens burnt orange casual tee" />
+                </a>
+                <div class="products-details-box">
+                    <p class="products-img-info-title">Womens burnt orange casual tee <sup>£</sup>29.95</p>
+                    <p>
+                        Classic casual t-shirt for women on the move. 100% cotton.
+                    </p>
+                    <ul class="products-img-menu">
+                        <li><a href="#" class="add-to-cart"><span class="text-hide">Add to cart</span></a></li>
+                        <li><a href="#" class="add-to-wishlist"><span class="text-hide">Wishlist</span></a></li>
+                        <li><a href="#" class="compare"><span class="text-hide">Compare</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <div class="row lookbook">
+        <div class="col-4">
+            <div class="lookbook-box men-lookbook">
+                <h2 class="lookbook-title">Men's <br /><span>lookbook</span></h2>
+                <p class="lookbook-text">
+                    Lorem ipsum dolor sit amet eras facilisis
+                    consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
+                    Elementum metus facilisis ut phasellu.
+                </p>
+                <a href="#" class="btn lookbook-view-more">View now</a>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="lookbook-box women-lookbook">
+                <h2 class="lookbook-title">Women's <br /><span>lookbook</span></h2>
+                <p class="lookbook-text">
+                    Lorem ipsum dolor sit amet eras facilisis
+                    consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
+                    Elementum metus facilisis ut phasellu.
+                </p>
+                <a href="#" class="btn lookbook-view-more">View now</a>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="lookbook-box your-lookbook">
+                <h2 class="lookbook-title">Your <br /><span>lookbook</span></h2>
+                <p class="lookbook-text">
+                    Lorem ipsum dolor sit amet eras facilisis
+                    consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
+                    Elementum metus facilisis ut phasellu.
+                </p>
+                <a href="#" class="btn lookbook-view-more">View now</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row footer">
+        <div class="col-12">
+            <div class="footer-box">
+                <div class="footer-list">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="brand.html" class="footer-menu">The brand</a></li>
+                        <li><a href="stores.html" class="footer-menu">Local stores</a></li>
+                        <li><a href="#" class="footer-menu">Customer service</a></li>
+                        <li><a href="#" class="footer-menu">Privacy & cookies</a></li>
+                        <li><a href="#" class="footer-menu">Site map</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list">
+                    <h3>Why buy from us</h3>
+                    <ul>
+                        <li><a href="#" class="footer-menu">Shipping & returns</a></li>
+                        <li><a href="#" class="footer-menu">Secure shopping</a></li>
+                        <li><a href="#" class="footer-menu">Testimonials</a></li>
+                        <li><a href="#" class="footer-menu">Award winning</a></li>
+                        <li><a href="#" class="footer-menu">Ethical trading</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list">
+                    <h3>Your account</h3>
+                    <ul>
+                        <li><a href="signin.html" class="footer-menu">Sign in</a></li>
+                        <li><a href="signin.html" class="footer-menu">Register</a></li>
+                        <li><a href="#" class="footer-menu">View cart</a></li>
+                        <li><a href="#" class="footer-menu">View your lookbook</a></li>
+                        <li><a href="#" class="footer-menu">Track an order</a></li>
+                        <li><a href="#" class="footer-menu">Update information</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list">
+                    <h3>Lookbook</h3>
+                    <ul>
+                        <li><a href="#" class="footer-menu">Latest posts</a></li>
+                        <li><a href="#" class="footer-menu">Men's lookbook</a></li>
+                        <li><a href="#" class="footer-menu">Women's lookbook</a></li>
+                        <li><a href="#" class="footer-menu">Lookbooks RSS feed</a></li>
+                        <li><a href="#" class="footer-menu">View your lookbook</a></li>
+                        <li><a href="#" class="footer-menu">Delete your lookbook</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list">
+                    <h3>Contact details</h3>
+                    <ul>
+                        <li class="footer-list-address">Head Office: Avenue Fashion, <br /> 180-182 Regent Street, London</li>
+                        <li><a href="tel:0123-456-789" rel="nofollow" class="footer-menu">Telephone: 0123-456-789</a></li>
+                        <li><a href="mailto:support@yourwebsite.com" class="footer-menu">Email: support@yourwebsite.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row banners">
+        <div class="banners-box">
             <div class="col-6">
                 <div class="banner-left">
-                    <h1>AWARD WINNER</h1>
-                    <h1>FASHION AWARDS 2016</h1>
+                    <h1 class="banner-title">AWARD WINNER <span>FASHION AWARDS 2016</span></h1>
                 </div>
             </div>
             <div class="col-6">
                 <div class="banner-right">
                     <ul>
                         <li>
-                            <a href="#"><img src="images/main/facebook.png" alt="facebook" /></a>
+                            <a href="#" class="banner-socil-icons social-icon-facebook"><span class="text-hide">Facebook</span></a>
                         </li>
                         <li>
-                            <a href="#"><img src="images/main/twitter.png" alt="twitter" /></a>
+                            <a href="#" class="banner-socil-icons social-icon-twitter"><span class="text-hide">Twitter</span></a>
                         </li>
                         <li>
-                            <a href="#"><img src="images/main/instagram.png" alt="instagram" /></a>
+                            <a href="#" class="banner-socil-icons social-icon-instagram"><span class="text-hide">Instagram</span></a>
                         </li>
                         <li>
-                            <a href="#"><img src="images/main/pinterest.png" alt="pinterest" /></a>
+                            <a href="#" class="banner-socil-icons social-icon-pinterest"><span class="text-hide">Pinterest</span></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="copyright">
-            <div class="copyright-wrap">
-                <div class="copyright-text">
-                    <span>© 2016 Avenue Fashion</span><span><sup>TM</sup></span>
-                </div>
-                <div class="site-dev">
-                    <span>Design by RobbyDesigns.com</span>
-                    <span>Dev by Loremipsum.com</span>
-                </div>
+    <div class="copyright">
+        <div class="copyright-wrap">
+            <div class="copyright-text">
+                <span>© 2016 Avenue Fashion</span><span><sup>TM</sup></span>
+            </div>
+            <div class="site-dev">
+                <span>Design by RobbyDesigns.com</span>
+                <span>Dev by Loremipsum.com</span>
             </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>
