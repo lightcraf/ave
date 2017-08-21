@@ -1,9 +1,10 @@
+    window.addEventListener("load", function () {
     var slideIndex = 1;
     showSlides(slideIndex);
-    document.getElementsByClassName("prev")[0].addEventListener("click", function () {
+    document.getElementsByClassName("prev-slide")[0].addEventListener("click", function () {
         showSlides(slideIndex += -1);
     });
-    document.getElementsByClassName("next")[0].addEventListener("click", function () {
+    document.getElementsByClassName("next-slide")[0].addEventListener("click", function () {
         showSlides(slideIndex += 1);
     });
 
@@ -17,21 +18,30 @@
         slides[slideIndex - 1].style.display = "block";
     }
 
-    document.getElementsByClassName("tab")[0].addEventListener("click", openTab);
 
-    function openTab(event) {
-        var i, tabcontent, tablinks, tabName;
-        tabName = event.target.getAttributeNode("data-tab").value;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(tabName).style.display = "block";
-        event.target.className += " active";
-    }
+    document.getElementsByClassName("tab-box")[0].addEventListener("click", function(event) {
+        var i, tabContent, tabLinks, tabName;
 
-    document.getElementsByClassName("tabcontent")[0].style.display = "block";
+        if (event.target.className == "tab-links") {
+            tabName = event.target.getAttribute("data-tab");
+            tabContent = document.getElementsByClassName("tab-content");
+            tabLinks = document.getElementsByClassName("tab-links");
+
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].style.display = "none";
+            }
+
+
+            for (i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].className = tabLinks[i].className.replace(" active-tab", "");
+            }
+
+            document.getElementById(tabName).style.display = "block";
+            event.target.className += " active-tab";
+        } else {
+            return false;
+        }
+    });
+
+    document.getElementsByClassName("tab-content")[0].style.display = "block";
+});
