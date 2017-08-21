@@ -1,268 +1,277 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>AVE - Sign In</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <link rel="stylesheet" href="signin.css"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:Regular">
-    </head>
-    <body>
-        <div class="header">
-            <div class="top-bar">
-                <div class="currency">
-                    <a href="#cur">Currency: GBP</a>
-                </div>
-                <div class="top-bar-menu">
+<head>
+    <title>AVE - Sign In</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="top-bar">
+            <div class="currency">
+                <a href="#">Currency: GBP</a>
+            </div>
+            <div class="top-bar-menu">
+                <ul>
+                    <li>
+                        <a href="signin.html">Register</a>
+                    </li>
+                    <li>
+                        <a href="signin.html">Sign In</a>
+                    </li>
+                    <li>
+                        <a href="#" class="shop-cart">empty</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="logo">
+                <h1><a href="index.html" class="logo-link"><span>Avenue</span> fashion</a></h1>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn arrow-down">Mens</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-col">
+                                <p>Casuals</p>
+                                <a href="#">Jackets</a>
+                                <a href="#">Hoodies & Sweatshirts</a>
+                                <a href="#">Polo Shirts</a>
+                                <a href="#">Sportswear</a>
+                                <a href="#">Trousers & Chinos</a>
+                                <a href="#">T-Shirts</a>
+                            </div>
+                            <div class="dropdown-col">
+                                <p>Formal</p>
+                                <a href="#">Jackets</a>
+                                <a href="#">Shirts</a>
+                                <a href="#">Suits</a>
+                                <a href="#">Trousers</a>
+                            </div>
+                            <div class="dropdown-banner">
+                                <p><b>AUTUMN SALE!</b><br />UP TO 50% OFF</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn arrow-down">Womens</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-col">
+                                <p>Casuals</p>
+                                <a href="#">Jackets</a>
+                                <a href="#">Shirts & Blouses</a>
+                                <a href="#">Sportswear</a>
+                                <a href="#">Chinos</a>
+                                <a href="#">Sweaters & Cardigans</a>
+                            </div>
+                            <div class="dropdown-col">
+                                <p>Formal</p>
+                                <a href="#">Jackets</a>
+                                <a href="#">Shirts</a>
+                                <a href="#">Suits</a>
+                                <a href="#">Trousers</a>
+                            </div>
+                            <div class="dropdown-banner">
+                                <p><b>AUTUMN SALE!</b><br />UP TO 50% OFF</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="brand.html" class="dropbtn">The brand</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="stores.html" class="dropbtn arrow-down">Local stores</a>
+                        <div class="dropdown-content dropdown-content-2">
+                            <div class="dropdown-col">
+                                <a href="#">Fashion Valley Mall</a>
+                                <a href="#">Outlets at San Clemente</a>
+                                <a href="#">Westfield Topanga</a>
+                                <a href="#">South Bay Galleria</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="lookbook.html" class="dropbtn arrow-down">Look book</a>
+                        <div class="dropdown-content dropdown-content-rigth">
+                            <div class="dropdown-col">
+                                <p>Our Lookbooks</p>
+                                <a href="#">Latest Posts (mixed)</a>
+                                <a href="#">Men's Lookbook</a>
+                                <a href="#">Women's Lookbook</a>
+                            </div>
+                            <div class="dropdown-col">
+                                <p>Your lookbooks</p>
+                                <a href="#">View and Edit</a>
+                                <a href="#">Share</a>
+                                <a href="#">Delete</a>
+                            </div>
+                            <div class="dropdown-banner">
+                                <p><b>AUTUMN SALE!</b><br />UP TO 50% OFF</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <form class="nav-form">
+                            <label for="search">Search</label>
+                            <input type="search" id="search" class="website-search" placeholder="Search.." />
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row intro">
+        <div class="col-12">
+            <div class="page-title-box">
+                <h2 class="page-title"><span>Welcome</span> to ave</h2>
+                <h3 class="slogan">Sign in or register</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="row form-box">
+        <div class="col-6">
+            <div class="sign-in">
+                <h3 class="form-title">Sign in</h3>
+                <form method="post" accept-charset="UTF-8" action="">
+                    <label for="sign-in-email">Email</label>
+                    <input type="email" id="sign-in-email" class="form-control" placeholder="Your Email.." required /><br />
+                    <label for="sign-in-password">Password</label>
+                    <input type="password" id="sign-in-password" class="form-control" placeholder="Your password.." required /><br />
+                    <button class="sign-in-button btn" type="submit">Sign in</button>
+                </form>
+                <a href="#" class="restore-password color-aqua">Forgot your Password →</a>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="register">
+                <h3 class="form-title">Register</h3>
+                <form method="post" accept-charset="UTF-8" action="">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" class="form-control" placeholder="Your Email.." required /><br />
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password" class="form-control" placeholder="Your password.." required /><br />
+                    <label for="confirm-password">Confirm password</label>
+                    <input type="password" id="confirm-password" class="form-control" placeholder="Confirm password.." required /><br />
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="check"></span>
+                    </label>
+                    <span class="check-text">Sign up for exclusive updates, discounts, new arrivals, contests, and more!</span>
+                    <br />
+                    <button class="register-button btn" type="submit">Create account</button>
+                </form>
+                <p>
+                    By clicking 'Create Account', you<br />
+                    agree to out <a href="#" class="color-aqua">Privacy Policy →</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row footer">
+        <div class="col-12">
+            <div class="footer-box">
+                <div class="footer-list">
+                    <h3>Information</h3>
                     <ul>
-                        <li>
-                            <a href="signin.html">Register</a>
-                        </li>
-                        <li>
-                            <a href="signin.html">Sign In</a>
-                        </li>
-                        <li>
-                            <a href="#box" id="cart">empty</a>
-                        </li>
+                        <li><a href="brand.html" class="footer-menu">The brand</a></li>
+                        <li><a href="stores.html" class="footer-menu">Local stores</a></li>
+                        <li><a href="#" class="footer-menu">Customer service</a></li>
+                        <li><a href="#" class="footer-menu">Privacy & cookies</a></li>
+                        <li><a href="#" class="footer-menu">Site map</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list">
+                    <h3>Why buy from us</h3>
+                    <ul>
+                        <li><a href="#" class="footer-menu">Shipping & returns</a></li>
+                        <li><a href="#" class="footer-menu">Secure shopping</a></li>
+                        <li><a href="#" class="footer-menu">Testimonials</a></li>
+                        <li><a href="#" class="footer-menu">Award winning</a></li>
+                        <li><a href="#" class="footer-menu">Ethical trading</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list">
+                    <h3>Your account</h3>
+                    <ul>
+                        <li><a href="signin.html" class="footer-menu">Sign in</a></li>
+                        <li><a href="signin.html" class="footer-menu">Register</a></li>
+                        <li><a href="#" class="footer-menu">View cart</a></li>
+                        <li><a href="#" class="footer-menu">View your lookbook</a></li>
+                        <li><a href="#" class="footer-menu">Track an order</a></li>
+                        <li><a href="#" class="footer-menu">Update information</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list">
+                    <h3>Lookbook</h3>
+                    <ul>
+                        <li><a href="#" class="footer-menu">Latest posts</a></li>
+                        <li><a href="#" class="footer-menu">Men's lookbook</a></li>
+                        <li><a href="#" class="footer-menu">Women's lookbook</a></li>
+                        <li><a href="#" class="footer-menu">Lookbooks RSS feed</a></li>
+                        <li><a href="#" class="footer-menu">View your lookbook</a></li>
+                        <li><a href="#" class="footer-menu">Delete your lookbook</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list">
+                    <h3>Contact details</h3>
+                    <ul>
+                        <li class="footer-list-address">Head Office: Avenue Fashion, <br /> 180-182 Regent Street, London</li>
+                        <li><a href="tel:0123-456-789" rel="nofollow" class="footer-menu">Telephone: 0123-456-789</a></li>
+                        <li><a href="mailto:support@yourwebsite.com" class="footer-menu">Email: support@yourwebsite.com</a></li>
                     </ul>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="nav row">
-            <div class="col-12">
-                <div class="logo">
-                    <a href="index.html"><span>AVENUE</span> FASHION</a>
-                </div>
-                <div class="nav-menu">
-                    <ul>
-                        <li class="dropdown">
-                            <a href="#" class="dropbtn">MENS <br/><img src="images/main/rectangle.png"></a>
-                            <div class="dropdown-content">
-                                <div class="dropdown-col">
-                                    <p>CASUALS</p>
-                                    <a href="#">Jackets</a>
-                                    <a href="#">Hoodies & Sweatshirts</a>
-                                    <a href="#">Polo Shirts</a>
-                                    <a href="#">Sportswear</a>
-                                    <a href="#">Trousers & Chinos</a>
-                                    <a href="#">T-Shirts</a>
-                                </div>
-                                <div class="dropdown-col">
-                                    <p>FORMAL</p>
-                                    <a href="#">Jackets</a>
-                                    <a href="#">Shirts</a>
-                                    <a href="#">Suits</a>
-                                    <a href="#">Trousers</a>
-                                </div>
-                                <div class="dropdown-banner">
-                                    <p><b>AUTUMN SALE!</b><br />UP TO 50% OFF</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropbtn">WOMENS <br /><img src="images/main/rectangle.png"></a>
-                            <div class="dropdown-content">
-                                <div class="dropdown-col">
-                                    <p>CASUALS</p>
-                                    <a href="#">Jackets</a>
-                                    <a href="#">Shirts & Blouses</a>
-                                    <a href="#">Sportswear</a>
-                                    <a href="#">Chinos</a>
-                                    <a href="#">Sweaters & Cardigans</a>
-                                </div>
-                                <div class="dropdown-col">
-                                    <p>FORMAL</p>
-                                    <a href="#">Jackets</a>
-                                    <a href="#">Shirts</a>
-                                    <a href="#">Suits</a>
-                                    <a href="#">Trousers</a>
-                                </div>
-                                <div class="dropdown-banner">
-                                    <p><b>AUTUMN SALE!</b><br />UP TO 50% OFF</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <a href="brand.html" class="dropbtn">THE BRAND</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="stores.html" class="dropbtn">LOCAL STORES <br /><img src="images/main/rectangle.png"></a>
-                            <div class="dropdown-content dropdown-content-2">
-                                <div class="dropdown-col">
-                                    <a href="#">Fashion Valley Mall</a>
-                                    <a href="#">Outlets at San Clemente</a>
-                                    <a href="#">Westfield Topanga</a>
-                                    <a href="#">South Bay Galleria</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <a href="lookbook.html" class="dropbtn">LOOK BOOK <br /><img src="images/main/rectangle.png"></a>
-                            <div class="dropdown-content dropdown-content-rigth">
-                                <div class="dropdown-col">
-                                    <p>OUR LOOKBOOKS</p>
-                                    <a href="#">Latest Posts (mixed)</a>
-                                    <a href="#">Men's Lookbook</a>
-                                    <a href="#">Women's Lookbook</a>
-                                </div>
-                                <div class="dropdown-col">
-                                    <p>YOUR LOOKBOOK</p>
-                                    <a href="#">View and Edit</a>
-                                    <a href="#">Share</a>
-                                    <a href="#">Delete</a>
-                                </div>
-                                <div class="dropdown-banner">
-                                    <p><b>AUTUMN SALE!</b><br />UP TO 50% OFF</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <form class="form">
-                                <input type="search" class="form-search" name="" placeholder="Search.." />
-                            </form>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="row intro">
-            <div class="col-12">
-                <div class="slogan">
-                    <h1><span>WELCOME</span> TO AVE</h1>
-                    <p>SIGN IN OR REGISTER</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row form-wrapper">
-            <div class="col-6">
-                <div class="sign-in">
-                    <h2 class="form-title">SIGN IN</h2>
-                    <form>
-                        <input type="email" placeholder="Your Email.." /><br />
-                        <input type="password" placeholder="Your password.." /><br />
-                        <button class="sign-in-button" type="submit">SIGN IN</button>
-                    </form>
-                    <a href="#">Forgot your Password →</a>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="register">
-                    <h2 class="form-title">REGISTER</h2>
-                    <form>
-                        <input type="email" placeholder="Your Email.." /><br />
-                        <input type="password" placeholder="Your password.." /><br />
-                        <input type="password" placeholder="Confirm password.." /><br />
-                        <label class="switch">
-                            <input type="checkbox">
-                            <div class="check"></div>
-                        </label>
-                        <span class="check-text">Sign up for exclusive updates, discounts, new arrivals, contests, and more!</span>
-                        <br />
-                        <button class="register-button" type="submit">CREATE ACCOUNT</button>
-                    </form>
-                    <p>By clicking 'Create Account', you<br />
-                     agree to out <a href="#">Privacy Policy →</a></p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row footer">
-            <div class="col-12">
-                <div class="footer-wrap">
-                    <div class="footer-list">
-                        <p>INFORMATION</p>
-                        <ul>
-                            <li><a href="brand.html">The brand</a></li>
-                            <li><a href="stores.html">Local stores</a></li>
-                            <li><a href="#">Customer service</a></li>
-                            <li><a href="#">Privacy & cookies</a></li>
-                            <li><a href="#">Site map</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-list">
-                        <p>WHY BUY FROM US</p>
-                        <ul>
-                            <li><a href="#">Shipping & return</a></li>
-                            <li><a href="#">Secure shopping</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                            <li><a href="#">Award winning</a></li>
-                            <li><a href="#">Ethnical trading</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-list">
-                        <p>YOUR ACCOUNT</p>
-                        <ul>
-                            <li><a href="signin.html">Sing in</a></li>
-                            <li><a href="signin.html">Register</a></li>
-                            <li><a href="#">View cart</a></li>
-                            <li><a href="#">View your lookbook</a></li>
-                            <li><a href="#">Track an order</a></li>
-                            <li><a href="#">Update information</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-list">
-                        <p>LOOKBOOK</p>
-                        <ul>
-                            <li><a href="#">Latest posts</a></li>
-                            <li><a href="#">Men's lookbook</a></li>
-                            <li><a href="#">Women's lookbook</a></li>
-                            <li><a href="#">Lookbooks RSS feed</a></li>
-                            <li><a href="#">View your lookbook</a></li>
-                            <li><a href="#">Delete your lookbook</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-list">
-                        <p>CONTACT DETAILS</p>
-                        <ul>
-                            <li>Head Office: Avenue Fashion, <br /> 180-182 Regent Street, London</li>
-                            <li><a href="tel:0123-456-789">Telephone: 0123-456-789</a></li>
-                            <li><a href="mailto:support@yourwebsite.com">Email: support@yourwebsite.com</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row banners">
+    <div class="row banners">
+        <div class="banners-box">
             <div class="col-6">
                 <div class="banner-left">
-                    <h1>AWARD WINNER</h1>
-                    <h1>FASHION AWARDS 2016</h1>
+                    <h1 class="banner-title">AWARD WINNER <span>FASHION AWARDS 2016</span></h1>
                 </div>
             </div>
             <div class="col-6">
                 <div class="banner-right">
                     <ul>
                         <li>
-                            <a href="#"><img src="images/main/facebook.png" alt="facebook" /></a>
+                            <a href="#" class="banner-socil-icons social-icon-facebook"><span class="text-hide">Facebook</span></a>
                         </li>
                         <li>
-                            <a href="#"><img src="images/main/twitter.png" alt="twitter" /></a>
+                            <a href="#" class="banner-socil-icons social-icon-twitter"><span class="text-hide">Twitter</span></a>
                         </li>
                         <li>
-                            <a href="#"><img src="images/main/instagram.png" alt="instagram" /></a>
+                            <a href="#" class="banner-socil-icons social-icon-instagram"><span class="text-hide">Instagram</span></a>
                         </li>
                         <li>
-                            <a href="#"><img src="images/main/pinterest.png" alt="pinterest" /></a>
+                            <a href="#" class="banner-socil-icons social-icon-pinterest"><span class="text-hide">Pinterest</span></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="copyright">
-            <div class="copyright-wrap">
-                <div class="copyright-text">
-                    <span>© 2016 Avenue Fashion</span><span><sup>TM</sup></span>
-                </div>
-                <div class="site-dev">
-                    <span>Design by RobbyDesigns.com</span>
-                    <span>Dev by Loremipsum.com</span>
-                </div>
+    <div class="copyright">
+        <div class="copyright-wrap">
+            <div class="copyright-text">
+                <span>© 2016 Avenue Fashion</span><span><sup>TM</sup></span>
+            </div>
+            <div class="site-dev">
+                <span>Design by RobbyDesigns.com</span>
+                <span>Dev by Loremipsum.com</span>
             </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>
